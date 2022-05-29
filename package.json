@@ -1,5 +1,5 @@
 {
-  "name": "ok-now",
+  "name": "knockwork",
   "private": true,
   "dependencies": {
     "@rails/actioncable": "^6.0.0",
