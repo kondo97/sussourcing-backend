@@ -23,13 +23,13 @@ default: &default
 
 development:
   <<: *default
-  database: ok_now_development
+  database: knockwork_development
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user running Rails.
-  #username: ok_now
+  #username: knockwork
 
   # The password associated with the postgres role (username).
   #password:
@@ -57,7 +57,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: ok_now_test
+  database: knockwork_test
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -81,6 +81,6 @@ test:
 #
 production:
   <<: *default
-  database: ok_now_production
-  username: ok_now
-  password: <%= ENV['OK_NOW_DATABASE_PASSWORD'] %>
+  database: knockwork_production
+  username: knockwork
+  password: <%= ENV['knockwork_DATABASE_PASSWORD'] %>
